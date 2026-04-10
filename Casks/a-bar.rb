@@ -1,6 +1,6 @@
 cask "a-bar" do
-  version "1.4.0"
-  sha256 "b559106d3e06ffd171e91d3ba2390c9bb563309bc6f36c599d26f3a044e13f02"
+  version "1.4.1"
+  sha256 "a6bc762a42b6a63c7383723961b974e1104bc8545ddde80e3923a6742446b060"
 
   url "https://github.com/Jean-Tinland/a-bar/releases/download/v#{version}/a-bar.zip",
       verified: "github.com/Jean-Tinland/a-bar/"
@@ -19,7 +19,7 @@ cask "a-bar" do
 
   postflight do
     system "xattr", "-d", "com.apple.quarantine", "#{appdir}/a-bar.app"
-  end
+  end 
 
   uninstall quit: "com.jeantinland.a-bar"
 
