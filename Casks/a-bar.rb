@@ -19,7 +19,7 @@ cask "a-bar" do
 
   postflight do
     system "xattr", "-d", "com.apple.quarantine", "#{appdir}/a-bar.app"
-  end 
+  end
 
   uninstall quit: "com.jeantinland.a-bar"
 
